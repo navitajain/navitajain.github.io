@@ -1,0 +1,184 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+html {
+  font-size: 14px; }
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 100%; }
+
+
+.site {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%; }
+
+.site-wrap {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+
+.site-name {
+  margin: 0 0 0 .7rem;
+  color: #333;
+  cursor: pointer;
+  line-height: 1em; }
+
+.site-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px; }
+
+.site-nav {
+    float: right;
+    margin-top: .6rem; margin-top: 0;}
+
+h1 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.25;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 3.6em;
+  letter-spacing: -0.02em;
+  line-height: 1.2em;
+  margin: 0.25em 0 0.25em; }
+
+
+nav {
+  float: right;
+  margin-top: .33rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; }
+
+ul {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem; 
+	padding-left: 2rem;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    width: 20rem; }
+
+
+li {
+    font-weight: bold;
+    width: 33.3%;
+    float: left;
+    padding: 7px 0;
+    text-align: center;
+    cursor: pointer; }
+
+li:hover {
+    color: #d0332b; }
+
+nav ul li:hover {
+    color: #d0332b; }
+nav ul li.active:nth-child(1) ~ span,
+nav ul li.inactive:nth-child(1):hover ~ span {
+    left: 0%; }
+nav ul li.active:nth-child(2) ~ span,
+nav ul li.inactive:nth-child(2):hover ~ span {
+    left: 33.3%; }
+nav ul li.active:nth-child(3) ~ span,
+nav ul li.inactive:nth-child(3):hover ~ span {
+    left: 66.6%; }
+
+nav span {
+    position: absolute;
+    bottom: -42px;
+    display: block;
+    width: 33.3%;
+    height: 5px;
+    background: #f4511e;
+    border-radius: 15px; }
+
+footer {
+  background-color: #fafafa;
+  border-top: thin solid #f3f3f3;
+  color: #7a7a7a;
+  font-size: 0.75rem;
+  font-weight: 300;
+  padding: 2rem;
+  text-align: center; }
+  footer a {
+    margin-left: 1em; }
+    footer a:first-of-type {
+      margin-left: 0; }
+
+.measure {
+  margin: 0 auto;
+  max-width: 50rem; }
+
+
+.post-header .image-gallery img {
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5); }
+.post-header {
+  border-bottom: solid 1px #d7d7d7; }
+.post-meta {
+  float: left;
+  letter-spacing: -0.02em;
+  font-weight: 200;
+  width: auto;
+  margin: 0;
+  padding: 0.25em 0;
+  color: #7a7a7a;
+  font-style: italic; }
+
+img {
+    height: auto; max-width: 100%;} }
+
+.post-header img {
+  width: 100%; }
+
+.py2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.posts hr {
+  padding: 0;
+  border: none;
+  border-top: dotted 1px #a5a5a5;
+  color: #a5a5a5;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 3em; }
+
+.posts hr:last-of-type {
+  display: none; }
+
+
+#jumpBtn{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 5px;
+	border-radius: 4px;
+
+}
+#jumpBtn:hover{
+	background-color: #444;
+}
