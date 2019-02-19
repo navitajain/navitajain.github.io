@@ -136,12 +136,14 @@ footer {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
   box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5); }
-.post-header {
-  border-bottom: solid 1px #d7d7d7; }
+/*.post-header {
+  border-bottom: solid 1px #d7d7d7; }*/
 .post-meta {
   float: left;
   letter-spacing: -0.02em;
-  font-weight: 200;
+  font-size: 1.25rem;
+  color: #696969;
+  font-weight: 500;
   width: auto;
   margin: 0;
   padding: 0.25em; }
@@ -153,14 +155,16 @@ img {
   width: 100%; }
 
 .py2 {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-top: 6rem;
+  padding-bottom: 0.05rem; }
+
 
 .posts hr {
   padding: 0;
   border: none;
-  border-top: dotted 1px #a5a5a5;
-  color: #a5a5a5;
+  /*border-top: 2px solid #000;*/
+  /*border-bottom: 5px #a5a5a5;*/
+  border-bottom: 2px outset black;
   text-align: center;
   margin-bottom: 0;
   margin-top: 3em; }
