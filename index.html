@@ -27,9 +27,9 @@
   		gtag('config', 'UA-134760242-1');
 	</script>
 
-
 </head>
 <body class="site">
+	<!-- Head/Navigation -->
 	<div class="site-wrap">
 		<h1 class="site-name">
 			<a:link href="https://crazinessthisworldentails.com" class="site-title">CrazinessThisWorldEntails</a>
@@ -37,25 +37,26 @@
 		<nav class="site-nav">
 			<ul>
 				<li class="inactive">
-					<a href="/soemthing">About Me</a>
+					<a href="NavitaJainResume.pdf">About Me</a>
 				</li>
 				<!-- Include TechnicalStuff html file -->
+				<!--
 				<li class="active">
-					<a href="/technicalStuff.html">Technical Stuff</a>
-				</li>
+					<a href="technicalStuff.html">Technical Stuff </link>
+				</li>-->
 				<li class="active">
-					<a href="/">Memes</a>
+					<a href="memes.html">Memes</a>
 				</li>
 				
 			</ul>
 			<!--<span></span>-->
 		</nav>
 	</div>
-	<!--<div class="site-wrap center">
-		{% include header.html %}
-	</div>	-->
+	<!--end of Head/Navigation-->
+	
 
-	<div class="measure">
+<!-- making memes as my default/home/index page -->
+<div class="measure">
 		<div class="posts">
 		<div class="post-header py2">
 			<p class="post-meta">You know - you are so pregnant when you can only sleep on your sides!! </p>
@@ -99,12 +100,14 @@
 	</div>
 	
 
+
+
 	<!-- Trigger/JumpToTop Modal -->
-	<button onclick="jumptoTopFunction()" id="jumpBtn" title="Go to top">Top</button>
+	<button onclick="jumptoTopFunction()" id="jumpBtn"><img src="./images/NavToTop.png"  height="32" width="32"></button>
 
 
 
-	<!--{% include footer.html %}-->
+  	<!--{% include footer.html %}-->
 	<footer>
   		<div class="measure">
   			<small>
@@ -117,8 +120,10 @@
   		</div>
   	</footer>
 
-
   	<!--Scripts-->
   	<script type="text/javascript" src="./js/JumpToTopModalBtn.js"></script>
+
+
+  	
 </body>
 </html>
