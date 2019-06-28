@@ -1,13 +1,36 @@
+'''Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+
+Example 1:
+
+Input:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+Output: [1,2,3,6,9,8,7,4,5]
+Example 2:
+
+Input:
+[
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9,10,11,12]
+]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]'''
+
 class Solution(object):
     def spiralOrder(self, matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
+        # single col to list 
         if len(matrix[0]) ==1:
             return [m[0] for m in matrix]
-        l = []
-        return self.clockSpiral(matrix,l)
+        
+        #recurse
+        return self.clockSpiral(matrix,[])
         
     def clockSpiral(self,matrix,l):
         if len(matrix)==0 or len(matrix[0]) == 0:
@@ -19,7 +42,7 @@ class Solution(object):
         # col
         for i in range(col-1):
             l.append(matrix[0][i])
-        #print row
+        # row
         for j in range(row):
             l.append(matrix[j][col-1])
             
